@@ -8,7 +8,71 @@ body {
   background-color: #c1b5ad;
 }
 
+nav {
+  width: 100vw;
+  height: 60px;
+  background-color: red;
+}
+
 #map {
   height: 100vh;
-  width: 100vw;
+  width: 70%;
+  float: left;
+  display: inline-block;
+}
+
+#sidebar {
+  width: 30%;
+  height: 100vh;
+  float: right;
+  display: inline-block;
+  background-color: black;
+}
+
+#top-side {
+  height: 300px;
+  margin-bottom: 30px;
+  background-color: red;
+  padding: 20px 0px;
+  border-radius: 250px 250px 0px 0px;
+}
+
+#itinerary {
+  background-color: white;
+  height: 50px;
+}
+
+#bottom-bottom-side {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 0px 0px 250px 250px;
+}
+
+
+@media (max-width: 750px) {
+  #map {
+    height: 400px;
+    width: 100vh;
+    float: none;
+    display: block;
+  }
+  
+  #sidebar {
+    width: 100vw;
+    height: 700px;
+    float: none;
+    display: block;
+    background-color: orange;
+  }
+  
+  #itinerary {
+    background-color: white;
+    height: 50px;
+  }
+  
+  #bottom-bottom-side {
+    background-color: white;
+    border: 1px solid black;
+  }
+
 }
